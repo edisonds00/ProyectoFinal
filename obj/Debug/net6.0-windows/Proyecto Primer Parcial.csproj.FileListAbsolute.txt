@@ -1,0 +1,22 @@
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\WinFormsApp1.frmMain.resources
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.csproj.GenerateResource.cache
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.AssemblyInfoInputs.cache
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.AssemblyInfo.cs
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.csproj.CoreCompileInputs.cache
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\bin\Debug\net6.0-windows\Proyecto Primer Parcial.exe
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\bin\Debug\net6.0-windows\Proyecto Primer Parcial.deps.json
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\bin\Debug\net6.0-windows\Proyecto Primer Parcial.runtimeconfig.json
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\bin\Debug\net6.0-windows\Proyecto Primer Parcial.dll
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\bin\Debug\net6.0-windows\Proyecto Primer Parcial.pdb
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.dll
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\refint\Proyecto Primer Parcial.dll
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.pdb
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Proyecto Primer Parcial.genruntimeconfig.cache
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\ref\Proyecto Primer Parcial.dll
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\GestorMantenimientosTaller.View.frmRegistroCliente.resources
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\GestorMantenimientosTaller.View.frmRegistroMecanico.resources
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\ProyectoPOE.View.frmInforme.resources
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\GestorMantenimientosTaller.View.frmRegistroMantenimiento.resources
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\Presentación.Formularios.frmRegistroVehiculo.resources
+C:\Users\WalterDuchi\Codigo\C#\Proyecto Jostin Santacruz\Proyecto Primer Parcial\obj\Debug\net6.0-windows\ProyectoPOE.View.frmIntegrantes.resources
