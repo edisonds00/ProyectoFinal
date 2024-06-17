@@ -20,7 +20,7 @@ namespace Proyecto_Primer_Parcial.Datos
         // Método para obtener un servicio por nombre
         public Servicio ObtenerPorNombre(string nombre)
         {
-            return servicios.Find(s => s.Nombre == nombre) ?? throw new InvalidOperationException($"Cliente con cédula {nombre} no encontrado.");
+            return servicios.Find(s => s.Nombre == nombre);
         }
 
         // Método para actualizar un servicio

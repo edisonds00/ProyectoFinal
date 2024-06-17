@@ -20,7 +20,7 @@ namespace Proyecto_Primer_Parcial.Datos
         // Método para obtener un repuesto por nombre
         public Repuesto ObtenerPorNombre(string nombre)
         {
-            return repuestos.Find(r => r.Nombre == nombre) ?? throw new InvalidOperationException($"Cliente con cédula {nombre} no encontrado.");
+            return repuestos.Find(r => r.Nombre == nombre);
         }
 
         // Método para actualizar un repuesto

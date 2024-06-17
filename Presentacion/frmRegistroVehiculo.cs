@@ -1,13 +1,8 @@
 ﻿using Negocio.Entidades;
+using Proyecto_Primer_Parcial.Datos;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Presentación.Formularios
@@ -15,49 +10,92 @@ namespace Presentación.Formularios
     public partial class frmRegistroVehiculo : Form
     {
         int id;
-       
         bool banderanuevo;
+        VehiculoDatos vehiculoDatos;
+
         public frmRegistroVehiculo()
         {
             InitializeComponent();
+            vehiculoDatos = new VehiculoDatos();
         }
+
 
         private void frmVehiculo_Load(object sender, EventArgs e)
         {
-            cargarClientes();
+            cargarClientesEnComboBox();
         }
+
+        private void CargarDatosDataGridView()
+        {
+            dgvVehiculos.DataSource = null;
+            dgvVehiculos.DataSource = vehiculoDatos.ObtenerTodos();
+        }
+
 
         private void cbClientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cargarVehículos();
         }
 
         private void dgvVehiculos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex != -1)
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string placa = txtPlaca.Text.Trim();
+            string marca = txtMarca.Text.Trim();
+            string ano = txtAño.Text.Trim();
+            string tipo = txtTipo.Text.Trim();
+
+            Vehiculo vehiculo = new Vehiculo(placa, marca, ano, tipo);
+
+            if (banderanuevo)
             {
-                txtAño.Text = dgvVehiculos.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txtMarca.Text = dgvVehiculos.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txtPlaca.Text = dgvVehiculos.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txtTipo.Text = dgvVehiculos.Rows[e.RowIndex].Cells[5].Value.ToString();
-
-                banderanuevo = false;
-                btnGuardar.Enabled = true;
-                btnEliminar.Enabled = true;
-                HabilitarCampos();
-
-                id = Convert.ToInt32(dgvVehiculos.Rows[e.RowIndex].Cells[0].Value);
+                vehiculoDatos.Agregar(vehiculo);
             }
+            else
+            {
+                vehiculoDatos.Actualizar(vehiculo);
+            }
+
+            // Luego de guardar o actualizar, actualiza el DataGridView y reinicia el formulario
+            CargarDatosDataGridView();
+            ReiniciarFormulario();
         }
 
-        private void cargarClientes()
+
+
+
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-            
+            if (dgvVehiculos.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Por favor, seleccione una fila para eliminar.", "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return; // Sale del método sin hacer nada más
+            }
+
+            string placa = dgvVehiculos.SelectedRows[0].Cells["Placa"].Value.ToString();
+            vehiculoDatos.Eliminar(placa);
+
+            // Actualiza el DataGridView y reinicia el formulario
+            CargarDatosDataGridView();
+            ReiniciarFormulario();
         }
 
-        private void cargarVehículos()
+
+
+
+
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+            btnNuevo.Visible = true;
+            btnCancelar.Visible = false;
+
+            ResetearBotones();
+            ReiniciarFormulario();
+            DeshabilitarCampos();
+            banderanuevo = false;
         }
 
         private void ReiniciarFormulario()
@@ -66,6 +104,8 @@ namespace Presentación.Formularios
             txtMarca.Text = string.Empty;
             txtPlaca.Text = string.Empty;
             txtTipo.Text = string.Empty;
+
+   
         }
 
         private void DeshabilitarCampos()
@@ -88,89 +128,56 @@ namespace Presentación.Formularios
         {
             btnNuevo.Enabled = true;
             btnGuardar.Enabled = false;
-            btnEliminar.Enabled = false;
-        }
-
-        private void Guardar_Click(object sender, EventArgs e)
-        {
-
-           
+            btnEliminar.Enabled = true;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             btnNuevo.Visible = false;
             btnCancelar.Visible = true;
-
             ReiniciarFormulario();
             HabilitarCampos();
-
-            // Botones
             btnNuevo.Enabled = false;
             btnGuardar.Enabled = true;
-            btnEliminar.Enabled = false;
-
+            btnEliminar.Enabled = true;
             banderanuevo = true;
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void soloNumeros(object sender, KeyPressEventArgs e)
         {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                // Permitir solo números y teclas de control (por ejemplo, retroceso)
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    e.Handled = true;
-                }
-
-                // Limitar a 4 caracteres
-                if (txtAño.Text.Length >= 4 && e.KeyChar != (char)Keys.Back)
-                {
-                    e.Handled = true;
-                }
+                e.Handled = true;
             }
-        }
 
-        private void soloNumerosTelefono(object sender, KeyPressEventArgs e)
-        {
+            if (txtAño.Text.Length >= 4 && e.KeyChar != (char)Keys.Back)
             {
-                // Permitir solo números y teclas de control (por ejemplo, retroceso)
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    e.Handled = true;
-                }
-
-                // Limitar a 10 caracteres
-                if (txtAño.Text.Length >= 10 && e.KeyChar != (char)Keys.Back)
-                {
-                    e.Handled = true;
-                }
+                e.Handled = true;
             }
         }
 
         private void soloAlfabeto(object sender, KeyPressEventArgs e)
         {
-            // Verificar si el carácter es una letra, un espacio o no es un control (como la tecla de retroceso)
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ')
             {
                 e.Handled = true;
             }
         }
 
-
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void cargarClientesEnComboBox()
         {
-            btnNuevo.Visible = true;
-            btnCancelar.Visible = false;
-
-            ResetearBotones();
-            ReiniciarFormulario();
-            DeshabilitarCampos();
-            banderanuevo = false;
+            ClienteDatos clienteDatos = new ClienteDatos();
+            List<Cliente> clientes = clienteDatos.ObtenerTodos();
+            cbClientes.Items.Clear();
+            foreach (Cliente cliente in clientes)
+            {
+                string nombreCompleto = cliente.Nombres + " " + cliente.Apellidos;
+                cbClientes.Items.Add(nombreCompleto);
+            }
+            if (clientes.Count > 0)
+            {
+                cbClientes.SelectedIndex = 0;
+            }
         }
 
 

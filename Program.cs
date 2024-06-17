@@ -1,3 +1,4 @@
+using GestorMantenimientosTaller.View;
 using WinFormsApp1;
 
 namespace Proyecto_Primer_Parcial

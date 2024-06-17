@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Negocio.Entidades { 
+namespace Negocio.Entidades
+{
     public class Vehiculo
     {
-        public string Placa { get; set; }
+        public string Placa { get; private set; }
         public string Marca { get; set; }
         public string AnoFabricacion { get; set; }
         public string Tipo { get; set; }
@@ -19,5 +16,7 @@ namespace Negocio.Entidades {
             AnoFabricacion = anoFabricacion;
             Tipo = tipo;
         }
+
+        // Puedes agregar métodos adicionales si los necesitas
     }
 }

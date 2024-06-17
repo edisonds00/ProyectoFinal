@@ -20,7 +20,7 @@ namespace Proyecto_Primer_Parcial.Datos
         // Obtener mantenimiento por código
         public Mantenimiento ObtenerPorCodigo(string codigo)
         {
-            return mantenimientos.Find(m => m.Codigo == codigo) ?? throw new InvalidOperationException($"Cliente con cédula {codigo} no encontrado.");
+            return mantenimientos.Find(m => m.Codigo == codigo);
         }
 
         // Actualizar mantenimiento

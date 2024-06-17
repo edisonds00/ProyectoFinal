@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio.Entidades;
+using Proyecto_Primer_Parcial.Datos;
 
 namespace GestorMantenimientosTaller.View
 {
@@ -16,10 +17,12 @@ namespace GestorMantenimientosTaller.View
     {
         bool banderanuevo = false;
         Mecanico mecanicoEncontrado;
+        MecanicoDatos mecanicoDatos = new MecanicoDatos(); // Instancia de la capa de datos
 
         public frmRegistroMecanico()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
 
             // Agregar opciones a cbxEspecialidadMecanico
             cbxEspecialidadMecanico.Items.Add("Mecánica automotriz general");
@@ -93,9 +96,9 @@ namespace GestorMantenimientosTaller.View
                 string especialidad = cbxEspecialidadMecanico.SelectedItem.ToString();
                 string jornada = cbxJornadaMecanico.SelectedItem.ToString();
 
+                // Agregar mecánico a la capa de datos
                 Mecanico objMecanico = new Mecanico(apellidos, nombres, cedula, especialidad, jornada);
-
-                // Pendiente (Agregar Mecánico)
+                mecanicoDatos.Agregar(objMecanico);
 
                 banderanuevo = false;
                 btnNuevo.Visible = true;
@@ -103,15 +106,24 @@ namespace GestorMantenimientosTaller.View
             }
             else
             {
-                string nombres = txtNombreMecanico.Text;
-                string apellidos = txtApellidoMecanico.Text;
-                string cedula = txtCedulaMecanico.Text;
-                string especialidad = cbxEspecialidadMecanico.SelectedItem.ToString();
-                string jornada = cbxJornadaMecanico.SelectedItem.ToString();
+                // Actualizar mecánico en la capa de datos
+                if (mecanicoEncontrado != null)
+                {
+                    mecanicoEncontrado.Apellidos = txtApellidoMecanico.Text;
+                    mecanicoEncontrado.Nombres = txtNombreMecanico.Text;
+                    mecanicoEncontrado.Especialidad = cbxEspecialidadMecanico.SelectedItem.ToString();
+                    mecanicoEncontrado.Jornada = cbxJornadaMecanico.SelectedItem.ToString();
 
-                Mecanico mecanicoActualizado = new Mecanico(apellidos, nombres, cedula, especialidad, jornada);
+                    mecanicoDatos.Actualizar(mecanicoEncontrado);
 
-                // Actualizar (Agregar Mecánico)
+                    banderanuevo = false;
+                    btnNuevo.Visible = true;
+                    btnCancelar.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Mecánico no encontrado.");
+                }
             }
 
             DeshabilitarCampos();
@@ -131,15 +143,19 @@ namespace GestorMantenimientosTaller.View
             banderanuevo = false;
         }
 
-
         private void btnBuscarMecanico_Click(object sender, EventArgs e)
         {
             string cedula = txtCedulaMecanico.Text;
 
-            // mecanicoEncontrado = // Pendiente (Obtener Mecánico)
+            // Create an instance of the MecanicoDatos class (assuming it exists)
+            MecanicoDatos mecanicoDatos = new MecanicoDatos();
+
+            // Retrieve the mechanic using the cedula
+            Mecanico mecanicoEncontrado = mecanicoDatos.ObtenerPorCedula(cedula);
 
             if (mecanicoEncontrado != null)
             {
+                // Mechanic found, populate the form fields
                 HabilitarCampos();
 
                 cbxEspecialidadMecanico.SelectedItem = mecanicoEncontrado.Especialidad;
@@ -148,31 +164,31 @@ namespace GestorMantenimientosTaller.View
                 txtNombreMecanico.Text = mecanicoEncontrado.Nombres;
                 txtCedulaMecanico.Text = mecanicoEncontrado.Cedula;
 
-                banderanuevo = false;
-
-                // Botones
+                // Enable buttons for editing and deleting
                 btnGuardarMecanico.Enabled = true;
                 btnEliminarMecanico.Enabled = true;
             }
             else
             {
+                // Mechanic not found, display a message
                 MessageBox.Show("Mecánico no encontrado.");
             }
         }
 
-
         private void btnEliminarMecanico_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea eliminar este mecánico?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Desea eliminar este mecanico?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-
-                // Pendiente (Eliminar Mecánico)
+                string cedula = txtCedulaMecanico.Text;
+                mecanicoDatos.Eliminar(cedula); // Eliminar cliente de la capa de datos
 
                 ResetearBotones();
                 ReiniciarFormulario();
                 DeshabilitarCampos();
             }
         }
+
+
 
         private void btnNuevoMecanico_Click(object sender, EventArgs e)
         {
@@ -182,7 +198,7 @@ namespace GestorMantenimientosTaller.View
             ReiniciarFormulario();
             HabilitarCampos();
 
-            // Botones
+            // Buttons
             btnNuevo.Enabled = false;
             btnGuardarMecanico.Enabled = true;
             btnBuscarMecanico.Enabled = false;
@@ -214,8 +230,6 @@ namespace GestorMantenimientosTaller.View
                 e.Handled = true;
             }
         }
-
-
 
     }
 }
