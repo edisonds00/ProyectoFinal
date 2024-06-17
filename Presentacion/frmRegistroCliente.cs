@@ -1,14 +1,7 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 using Negocio.Entidades;
+using Proyecto_Primer_Parcial.Datos;
 
 namespace GestorMantenimientosTaller.View
 {
@@ -16,9 +9,10 @@ namespace GestorMantenimientosTaller.View
     {
         bool banderanuevo = false;
         Cliente clienteEncontrado;
+        ClienteDatos clienteDatos = new ClienteDatos(); // Instancia de la capa de datos
 
         public frmRegistroCliente()
-        {;
+        {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterParent;
 
@@ -47,7 +41,7 @@ namespace GestorMantenimientosTaller.View
             txtNombre.ReadOnly = false;
             txtApellido.ReadOnly = false;
             txtdireccion.ReadOnly = false;
-            txtCedula.ReadOnly = false;
+            txtCedula.ReadOnly = false; // La cédula no se debe editar después de buscar
             txtTelefono.ReadOnly = false;
         }
 
@@ -58,7 +52,6 @@ namespace GestorMantenimientosTaller.View
             btnBuscar.Enabled = true;
             btnEliminar.Enabled = false;
         }
-
 
         private void Guardar_Click(object sender, EventArgs e)
         {
@@ -80,8 +73,8 @@ namespace GestorMantenimientosTaller.View
                 string cedula = txtCedula.Text;
                 string telefono = txtTelefono.Text;
                 Cliente objCliente = new Cliente(apellidos, nombres, cedula, direccion, telefono);
-                
-                // Pendiente (Agregar Cliente)
+
+                clienteDatos.Agregar(objCliente); // Agregar cliente a la capa de datos
 
                 banderanuevo = false;
                 btnNuevo.Visible = true;
@@ -96,7 +89,7 @@ namespace GestorMantenimientosTaller.View
                 string telefono = txtTelefono.Text;
                 Cliente clienteActualizado = new Cliente(apellidos, nombres, cedula, direccion, telefono);
 
-                // Pendiente (Actualizar Cliente)
+                clienteDatos.Actualizar(clienteActualizado); // Actualizar cliente en la capa de datos
             }
 
             DeshabilitarCampos();
@@ -125,7 +118,7 @@ namespace GestorMantenimientosTaller.View
         {
             string cedula = txtCedula.Text;
 
-            // clienteEncontrado = [Pendiente ObtenerCliente]
+            clienteEncontrado = clienteDatos.ObtenerPorCedula(cedula); // Obtener cliente por cédula desde la capa de datos
 
             if (clienteEncontrado != null)
             {
@@ -153,7 +146,8 @@ namespace GestorMantenimientosTaller.View
         {
             if (MessageBox.Show("¿Desea eliminar este cliente?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                // Pendiente (Eliminar Cliente)
+                string cedula = txtCedula.Text;
+                clienteDatos.Eliminar(cedula); // Eliminar cliente de la capa de datos
 
                 ResetearBotones();
                 ReiniciarFormulario();
@@ -163,35 +157,19 @@ namespace GestorMantenimientosTaller.View
 
         private void soloNumeros(object sender, KeyPressEventArgs e)
         {
+            // Permitir solo números y teclas de control (por ejemplo, retroceso)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                // Permitir solo números y teclas de control (por ejemplo, retroceso)
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    e.Handled = true;
-                }
-
-                // Limitar a 10 caracteres
-                if (txtCedula.Text.Length >= 10 && e.KeyChar != (char)Keys.Back)
-                {
-                    e.Handled = true;
-                }
+                e.Handled = true;
             }
         }
 
         private void soloNumerosTelefono(object sender, KeyPressEventArgs e)
         {
+            // Permitir solo números y teclas de control (por ejemplo, retroceso)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                // Permitir solo números y teclas de control (por ejemplo, retroceso)
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    e.Handled = true;
-                }
-
-                // Limitar a 10 caracteres
-                if (txtTelefono.Text.Length >= 10 && e.KeyChar != (char)Keys.Back)
-                {
-                    e.Handled = true;
-                }
+                e.Handled = true;
             }
         }
 
@@ -203,7 +181,6 @@ namespace GestorMantenimientosTaller.View
                 e.Handled = true;
             }
         }
-
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -217,4 +194,3 @@ namespace GestorMantenimientosTaller.View
         }
     }
 }
-

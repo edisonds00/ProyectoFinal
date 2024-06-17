@@ -21,8 +21,9 @@ namespace Proyecto_Primer_Parcial.Datos
         // Obtener cliente por cédula
         public Cliente ObtenerPorCedula(string cedula)
         {
-            return clientes.Find(c => c.Cedula == cedula) ?? throw new InvalidOperationException($"Cliente con cédula {cedula} no encontrado.");
+            return clientes.FirstOrDefault(c => c.Cedula == cedula);
         }
+
 
 
         // Actualizar cliente
