@@ -21,28 +21,26 @@ namespace GestorMantenimientosTaller.View
         bool banderanuevo = false;
         Mantenimiento mantenimientoEncontrado;
         int ultimoId = 0;
+        private ClienteDatos clienteDatos;
+        private MecanicoDatos mecanicoDatos;
+        private MantenimientoDatos mantenimientoDatos;
+
         public frmRegistroMantenimiento()
         {
             InitializeComponent();
 
-            
-            
-            
+            // Inicializar datos
+            clienteDatos = new ClienteDatos();
+            mecanicoDatos = new MecanicoDatos();
+            mantenimientoDatos = new MantenimientoDatos();
 
-            // Obtener el último ID de la base de datos al inicio
             ultimoId = ObtenerUltimoId();
         }
 
         private int ObtenerUltimoId()
         {
-            // Aquí deberías implementar la lógica para obtener el último ID desde tu base de datos
-            // Por ejemplo:
-            // var datos = new MantenimientoDatos();
-            // int ultimoId = datos.ObtenerUltimoId();
-            // return ultimoId;
-
-            // Como ejemplo, devolvemos un valor fijo para propósitos de demostración
-            return 0;
+            // Lógica para obtener el último ID
+            return mantenimientoDatos.ObtenerTodos().Count > 0 ? mantenimientoDatos.ObtenerTodos().Max(m => int.Parse(m.Codigo)) : 0;
         }
 
         private int GenerarNuevoId()
@@ -93,6 +91,7 @@ namespace GestorMantenimientosTaller.View
                     else
                     {
                         MessageBox.Show($"El repuesto '{nombreRepuesto}' no fue encontrado en la base de datos.");
+                        // Puedes decidir cómo manejar este caso, por ejemplo, omitir este repuesto o pedir al usuario que corrija la selección.
                     }
                 }
 
@@ -134,6 +133,7 @@ namespace GestorMantenimientosTaller.View
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            btnEliminar.Enabled = true;
             try
             {
                 MantenimientoDatos mantenimientoDatos = new MantenimientoDatos();
