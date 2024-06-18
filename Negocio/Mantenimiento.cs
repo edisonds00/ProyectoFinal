@@ -8,7 +8,7 @@ namespace Negocio.Entidades
 {
     public class Mantenimiento
     {
-        public string Codigo { get; set; }
+        public string Codigo { get; set; } // Cambiado a setter público para poder asignar desde MantenimientoDatos
         public Cliente Cliente { get; set; }
         public Mecanico Mecanico { get; set; }
         public DateTime FechaMant { get; set; }
@@ -19,19 +19,19 @@ namespace Negocio.Entidades
         public Repuesto[] Repuestos { get; set; }
         public Servicio[] Servicios { get; set; }
 
-        public Mantenimiento(string codigo, Cliente cliente, Mecanico mecanico, DateTime fechamant, Vehiculo vehiculo, string diagnostico, string trabajo, bool escorrectivo, Repuesto[] repuestos, Servicio[] servicios)
+        // Constructor para inicializar las propiedades
+        public Mantenimiento(string codigo, Cliente cliente, Mecanico mecanico, DateTime fechaMant, Vehiculo vehiculo, string diagnostico, string trabajo, bool esCorrectivo, Repuesto[] repuestos, Servicio[] servicios)
         {
-            this.Codigo = codigo;
-            this.Cliente = cliente;
-            this.Mecanico = mecanico;
-            this.FechaMant = fechamant;
-            this.Vehiculo = vehiculo;
-            this.Diagnostico = diagnostico;
-            this.Trabajo = trabajo;
-            this.EsCorrectivo = escorrectivo;
-            this.Repuestos = repuestos;
-            this.Servicios = servicios;
+            Codigo = codigo;
+            Cliente = cliente;
+            Mecanico = mecanico;
+            FechaMant = fechaMant;
+            Vehiculo = vehiculo;
+            Diagnostico = diagnostico;
+            Trabajo = trabajo;
+            EsCorrectivo = esCorrectivo;
+            Repuestos = repuestos;
+            Servicios = servicios;
         }
-        
     }
 }

@@ -10,10 +10,13 @@ namespace Proyecto_Primer_Parcial.Datos
     internal class MantenimientoDatos
     {
         private static List<Mantenimiento> mantenimientos = new List<Mantenimiento>();
+        private static int ultimoId = 0;
 
         // Agregar un mantenimiento
         public void Agregar(Mantenimiento mantenimiento)
         {
+            ultimoId++; // Incrementar el último ID disponible
+            mantenimiento.Codigo = ultimoId.ToString(); // Asignar el nuevo código al mantenimiento
             mantenimientos.Add(mantenimiento);
         }
 
@@ -26,7 +29,7 @@ namespace Proyecto_Primer_Parcial.Datos
         // Actualizar mantenimiento
         public void Actualizar(Mantenimiento mantenimiento)
         {
-            Mantenimiento mantExistente = mantenimientos.Find(m => m.Codigo == mantenimiento.Codigo) ?? throw new InvalidOperationException($"Cliente con cédula {mantenimiento.Codigo} no encontrado.");
+            Mantenimiento mantExistente = mantenimientos.Find(m => m.Codigo == mantenimiento.Codigo) ?? throw new InvalidOperationException($"Mantenimiento con código {mantenimiento.Codigo} no encontrado.");
             if (mantExistente != null)
             {
                 mantExistente.Cliente = mantenimiento.Cliente;

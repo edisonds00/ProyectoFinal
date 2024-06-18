@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            cmbCliente = new ComboBox();
+            btnMostrar = new Button();
+            cbClientes = new ComboBox();
             btnCancelar = new Button();
             groupBox5 = new GroupBox();
             rdbPreventivo = new RadioButton();
@@ -55,14 +56,13 @@
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
-            cmbMecanico = new ComboBox();
+            cbMecanicos = new ComboBox();
             label4 = new Label();
             label3 = new Label();
             txtId = new TextBox();
             dtpFecha = new DateTimePicker();
             label2 = new Label();
             label1 = new Label();
-            btnMostrar = new Button();
             groupBox1.SuspendLayout();
             groupBox5.SuspendLayout();
             repuestosBox.SuspendLayout();
@@ -73,7 +73,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(btnMostrar);
-            groupBox1.Controls.Add(cmbCliente);
+            groupBox1.Controls.Add(cbClientes);
             groupBox1.Controls.Add(btnCancelar);
             groupBox1.Controls.Add(groupBox5);
             groupBox1.Controls.Add(btnEliminar);
@@ -87,34 +87,50 @@
             groupBox1.Controls.Add(txtDiagnostico);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(groupBox2);
-            groupBox1.Controls.Add(cmbMecanico);
+            groupBox1.Controls.Add(cbMecanicos);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(txtId);
             groupBox1.Controls.Add(dtpFecha);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(29, 20);
+            groupBox1.Location = new Point(33, 27);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1046, 487);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(1195, 649);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Registro de mantenimiento";
             // 
-            // cmbCliente
+            // btnMostrar
             // 
-            cmbCliente.Enabled = false;
-            cmbCliente.FormattingEnabled = true;
-            cmbCliente.Location = new Point(108, 71);
-            cmbCliente.Name = "cmbCliente";
-            cmbCliente.Size = new Size(268, 23);
-            cmbCliente.TabIndex = 26;
+            btnMostrar.Enabled = false;
+            btnMostrar.Location = new Point(998, 588);
+            btnMostrar.Margin = new Padding(3, 4, 3, 4);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(159, 32);
+            btnMostrar.TabIndex = 27;
+            btnMostrar.Text = "Mostrar Factura";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.Click += btnMostrar_Click;
+            // 
+            // cbClientes
+            // 
+            cbClientes.Enabled = false;
+            cbClientes.FormattingEnabled = true;
+            cbClientes.Location = new Point(123, 95);
+            cbClientes.Margin = new Padding(3, 4, 3, 4);
+            cbClientes.Name = "cbClientes";
+            cbClientes.Size = new Size(306, 28);
+            cbClientes.TabIndex = 26;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(323, 441);
+            btnCancelar.Location = new Point(369, 588);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(81, 24);
+            btnCancelar.Size = new Size(93, 32);
             btnCancelar.TabIndex = 25;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -125,9 +141,11 @@
             // 
             groupBox5.Controls.Add(rdbPreventivo);
             groupBox5.Controls.Add(rdbCorrectivo);
-            groupBox5.Location = new Point(683, 218);
+            groupBox5.Location = new Point(781, 291);
+            groupBox5.Margin = new Padding(3, 4, 3, 4);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(329, 41);
+            groupBox5.Padding = new Padding(3, 4, 3, 4);
+            groupBox5.Size = new Size(376, 55);
             groupBox5.TabIndex = 24;
             groupBox5.TabStop = false;
             groupBox5.Text = "Tipo de Mantenimiento";
@@ -136,9 +154,10 @@
             // 
             rdbPreventivo.AutoSize = true;
             rdbPreventivo.Enabled = false;
-            rdbPreventivo.Location = new Point(92, 16);
+            rdbPreventivo.Location = new Point(105, 21);
+            rdbPreventivo.Margin = new Padding(3, 4, 3, 4);
             rdbPreventivo.Name = "rdbPreventivo";
-            rdbPreventivo.Size = new Size(81, 19);
+            rdbPreventivo.Size = new Size(99, 24);
             rdbPreventivo.TabIndex = 22;
             rdbPreventivo.TabStop = true;
             rdbPreventivo.Text = "Preventivo";
@@ -149,9 +168,10 @@
             // 
             rdbCorrectivo.AutoSize = true;
             rdbCorrectivo.Enabled = false;
-            rdbCorrectivo.Location = new Point(6, 16);
+            rdbCorrectivo.Location = new Point(7, 21);
+            rdbCorrectivo.Margin = new Padding(3, 4, 3, 4);
             rdbCorrectivo.Name = "rdbCorrectivo";
-            rdbCorrectivo.Size = new Size(80, 19);
+            rdbCorrectivo.Size = new Size(98, 24);
             rdbCorrectivo.TabIndex = 23;
             rdbCorrectivo.TabStop = true;
             rdbCorrectivo.Text = "Correctivo";
@@ -161,9 +181,10 @@
             // btnEliminar
             // 
             btnEliminar.Enabled = false;
-            btnEliminar.Location = new Point(624, 441);
+            btnEliminar.Location = new Point(713, 588);
+            btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(81, 24);
+            btnEliminar.Size = new Size(93, 32);
             btnEliminar.TabIndex = 21;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -171,9 +192,10 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(524, 441);
+            btnBuscar.Location = new Point(599, 588);
+            btnBuscar.Margin = new Padding(3, 4, 3, 4);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(81, 24);
+            btnBuscar.Size = new Size(93, 32);
             btnBuscar.TabIndex = 20;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -182,9 +204,10 @@
             // btnGuardar
             // 
             btnGuardar.Enabled = false;
-            btnGuardar.Location = new Point(424, 441);
+            btnGuardar.Location = new Point(485, 588);
+            btnGuardar.Margin = new Padding(3, 4, 3, 4);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(81, 24);
+            btnGuardar.Size = new Size(93, 32);
             btnGuardar.TabIndex = 19;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -192,9 +215,10 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(323, 441);
+            btnNuevo.Location = new Point(369, 588);
+            btnNuevo.Margin = new Padding(3, 4, 3, 4);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(81, 24);
+            btnNuevo.Size = new Size(93, 32);
             btnNuevo.TabIndex = 18;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
@@ -203,9 +227,11 @@
             // repuestosBox
             // 
             repuestosBox.Controls.Add(clbRepuestos);
-            repuestosBox.Location = new Point(672, 265);
+            repuestosBox.Location = new Point(768, 353);
+            repuestosBox.Margin = new Padding(3, 4, 3, 4);
             repuestosBox.Name = "repuestosBox";
-            repuestosBox.Size = new Size(340, 139);
+            repuestosBox.Padding = new Padding(3, 4, 3, 4);
+            repuestosBox.Size = new Size(389, 185);
             repuestosBox.TabIndex = 17;
             repuestosBox.TabStop = false;
             repuestosBox.Text = "Repuestos:";
@@ -216,18 +242,22 @@
             clbRepuestos.CheckOnClick = true;
             clbRepuestos.Enabled = false;
             clbRepuestos.FormattingEnabled = true;
-            clbRepuestos.Location = new Point(11, 27);
+            clbRepuestos.Items.AddRange(new object[] { "Filtros de aceite", "Filtros de aire", "Filtros de combustible", "Pastillas de freno", "Discos de freno", "Amortiguadores", "Batería", "Bombillas (para faros, interiores)", "Correas (de distribución, alternador)", "Bujías" });
+            clbRepuestos.Location = new Point(13, 36);
+            clbRepuestos.Margin = new Padding(3, 4, 3, 4);
             clbRepuestos.MultiColumn = true;
             clbRepuestos.Name = "clbRepuestos";
-            clbRepuestos.Size = new Size(310, 94);
+            clbRepuestos.Size = new Size(354, 114);
             clbRepuestos.TabIndex = 0;
             // 
             // groupBox3
             // 
             groupBox3.Controls.Add(clbServicios);
-            groupBox3.Location = new Point(524, 218);
+            groupBox3.Location = new Point(599, 291);
+            groupBox3.Margin = new Padding(3, 4, 3, 4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(143, 186);
+            groupBox3.Padding = new Padding(3, 4, 3, 4);
+            groupBox3.Size = new Size(163, 248);
             groupBox3.TabIndex = 16;
             groupBox3.TabStop = false;
             groupBox3.Text = "Servicios adicionales:";
@@ -237,43 +267,47 @@
             clbServicios.CheckOnClick = true;
             clbServicios.Enabled = false;
             clbServicios.FormattingEnabled = true;
-            clbServicios.Location = new Point(10, 27);
+            clbServicios.Items.AddRange(new object[] { "Lavado exterior e interior del vehículo", "Cambio de aceite", "Alineación y balanceo", "Cambio de filtros (aire, aceite, combustible)", "Revisión y carga de refrigerante", "Revisión y ajuste de frenos", "Revisión y ajuste de suspensión", "Limpieza y ajuste de bujías", "Revisión de sistemas eléctricos (luces, batería, alternador)", "Prueba y ajuste de presión de llantas" });
+            clbServicios.Location = new Point(11, 36);
+            clbServicios.Margin = new Padding(3, 4, 3, 4);
             clbServicios.Name = "clbServicios";
-            clbServicios.Size = new Size(123, 148);
+            clbServicios.Size = new Size(140, 180);
             clbServicios.TabIndex = 0;
             // 
             // rtbTrabajo
             // 
-            rtbTrabajo.Location = new Point(105, 257);
+            rtbTrabajo.Location = new Point(120, 343);
+            rtbTrabajo.Margin = new Padding(3, 4, 3, 4);
             rtbTrabajo.Name = "rtbTrabajo";
             rtbTrabajo.ReadOnly = true;
-            rtbTrabajo.Size = new Size(400, 147);
+            rtbTrabajo.Size = new Size(457, 195);
             rtbTrabajo.TabIndex = 13;
             rtbTrabajo.Text = "";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(51, 260);
+            label10.Location = new Point(58, 347);
             label10.Name = "label10";
-            label10.Size = new Size(48, 15);
+            label10.Size = new Size(62, 20);
             label10.TabIndex = 12;
             label10.Text = "Trabajo:";
             // 
             // txtDiagnostico
             // 
-            txtDiagnostico.Location = new Point(105, 218);
+            txtDiagnostico.Location = new Point(120, 291);
+            txtDiagnostico.Margin = new Padding(3, 4, 3, 4);
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.ReadOnly = true;
-            txtDiagnostico.Size = new Size(400, 23);
+            txtDiagnostico.Size = new Size(457, 27);
             txtDiagnostico.TabIndex = 11;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(26, 221);
+            label9.Location = new Point(30, 295);
             label9.Name = "label9";
-            label9.Size = new Size(73, 15);
+            label9.Size = new Size(92, 20);
             label9.TabIndex = 9;
             label9.Text = "Diagnóstico:";
             // 
@@ -287,159 +321,158 @@
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label5);
-            groupBox2.Location = new Point(52, 114);
+            groupBox2.Location = new Point(59, 152);
+            groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(960, 83);
+            groupBox2.Padding = new Padding(3, 4, 3, 4);
+            groupBox2.Size = new Size(1097, 111);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "Datos del vehículo:";
             // 
             // txtTipo
             // 
-            txtTipo.Location = new Point(762, 36);
+            txtTipo.Location = new Point(871, 48);
+            txtTipo.Margin = new Padding(3, 4, 3, 4);
             txtTipo.Name = "txtTipo";
             txtTipo.ReadOnly = true;
-            txtTipo.Size = new Size(91, 23);
+            txtTipo.Size = new Size(103, 27);
             txtTipo.TabIndex = 10;
             // 
             // txtAño
             // 
-            txtAño.Location = new Point(531, 36);
+            txtAño.Location = new Point(607, 48);
+            txtAño.Margin = new Padding(3, 4, 3, 4);
             txtAño.Name = "txtAño";
             txtAño.ReadOnly = true;
-            txtAño.Size = new Size(91, 23);
+            txtAño.Size = new Size(103, 27);
             txtAño.TabIndex = 9;
             txtAño.KeyPress += soloNumeros;
             // 
             // txtMarca
             // 
-            txtMarca.Location = new Point(314, 36);
+            txtMarca.Location = new Point(359, 48);
+            txtMarca.Margin = new Padding(3, 4, 3, 4);
             txtMarca.Name = "txtMarca";
             txtMarca.ReadOnly = true;
-            txtMarca.Size = new Size(91, 23);
+            txtMarca.Size = new Size(103, 27);
             txtMarca.TabIndex = 5;
             // 
             // txtPlaca
             // 
-            txtPlaca.Location = new Point(101, 36);
+            txtPlaca.Location = new Point(115, 48);
+            txtPlaca.Margin = new Padding(3, 4, 3, 4);
             txtPlaca.Name = "txtPlaca";
             txtPlaca.ReadOnly = true;
-            txtPlaca.Size = new Size(91, 23);
+            txtPlaca.Size = new Size(103, 27);
             txtPlaca.TabIndex = 4;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(723, 39);
+            label8.Location = new Point(826, 52);
             label8.Name = "label8";
-            label8.Size = new Size(33, 15);
+            label8.Size = new Size(42, 20);
             label8.TabIndex = 3;
             label8.Text = "Tipo:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(493, 39);
+            label7.Location = new Point(563, 52);
             label7.Name = "label7";
-            label7.Size = new Size(32, 15);
+            label7.Size = new Size(39, 20);
             label7.TabIndex = 2;
             label7.Text = "Año:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(265, 39);
+            label6.Location = new Point(303, 52);
             label6.Name = "label6";
-            label6.Size = new Size(43, 15);
+            label6.Size = new Size(53, 20);
             label6.TabIndex = 1;
             label6.Text = "Marca:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(55, 39);
+            label5.Location = new Point(63, 52);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(47, 20);
             label5.TabIndex = 0;
             label5.Text = "Placa:";
             // 
-            // cmbMecanico
+            // cbMecanicos
             // 
-            cmbMecanico.Enabled = false;
-            cmbMecanico.FormattingEnabled = true;
-            cmbMecanico.Location = new Point(459, 73);
-            cmbMecanico.Name = "cmbMecanico";
-            cmbMecanico.Size = new Size(271, 23);
-            cmbMecanico.TabIndex = 7;
+            cbMecanicos.Enabled = false;
+            cbMecanicos.FormattingEnabled = true;
+            cbMecanicos.Location = new Point(525, 97);
+            cbMecanicos.Margin = new Padding(3, 4, 3, 4);
+            cbMecanicos.Name = "cbMecanicos";
+            cbMecanicos.Size = new Size(309, 28);
+            cbMecanicos.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(391, 73);
+            label4.Location = new Point(447, 97);
             label4.Name = "label4";
-            label4.Size = new Size(62, 15);
+            label4.Size = new Size(76, 20);
             label4.TabIndex = 6;
             label4.Text = "Mecanico:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(52, 73);
+            label3.Location = new Point(59, 97);
             label3.Name = "label3";
-            label3.Size = new Size(47, 15);
+            label3.Size = new Size(58, 20);
             label3.TabIndex = 4;
             label3.Text = "Cliente:";
             // 
             // txtId
             // 
-            txtId.Location = new Point(107, 31);
+            txtId.Location = new Point(122, 41);
+            txtId.Margin = new Padding(3, 4, 3, 4);
             txtId.Name = "txtId";
-            txtId.Size = new Size(72, 23);
+            txtId.Size = new Size(82, 27);
             txtId.TabIndex = 3;
             // 
             // dtpFecha
             // 
             dtpFecha.Enabled = false;
-            dtpFecha.Location = new Point(382, 31);
+            dtpFecha.Location = new Point(437, 41);
+            dtpFecha.Margin = new Padding(3, 4, 3, 4);
             dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(219, 23);
+            dtpFecha.Size = new Size(250, 27);
             dtpFecha.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(234, 34);
+            label2.Location = new Point(267, 45);
             label2.Name = "label2";
-            label2.Size = new Size(142, 15);
+            label2.Size = new Size(176, 20);
             label2.TabIndex = 1;
             label2.Text = "Fecha de mantenimiento:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(79, 34);
+            label1.Location = new Point(90, 45);
             label1.Name = "label1";
-            label1.Size = new Size(20, 15);
+            label1.Size = new Size(25, 20);
             label1.TabIndex = 0;
             label1.Text = "Id:";
             // 
-            // btnMostrar
-            // 
-            btnMostrar.Enabled = false;
-            btnMostrar.Location = new Point(873, 441);
-            btnMostrar.Name = "btnMostrar";
-            btnMostrar.Size = new Size(139, 24);
-            btnMostrar.TabIndex = 27;
-            btnMostrar.Text = "Mostrar Factura";
-            btnMostrar.UseVisualStyleBackColor = true;
-            btnMostrar.Click += btnMostrar_Click;
-            // 
             // frmRegistroMantenimiento
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1110, 519);
+            ClientSize = new Size(1269, 692);
             Controls.Add(groupBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmRegistroMantenimiento";
             Text = "frmRegistroMantenimiento";
             Load += frmRegistroMantenimiento_Load;
@@ -458,7 +491,7 @@
 
         private GroupBox groupBox1;
         private Label label1;
-        private ComboBox cmbMecanico;
+        private ComboBox cbMecanicos;
         private Label label4;
         private Label label3;
         private TextBox txtId;
@@ -489,7 +522,7 @@
         private RadioButton rdbPreventivo;
         private RadioButton rdbCorrectivo;
         private Button btnCancelar;
-        private ComboBox cmbCliente;
+        private ComboBox cbClientes;
         private Button btnMostrar;
     }
 }

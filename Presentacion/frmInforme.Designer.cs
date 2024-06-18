@@ -103,9 +103,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Desktop;
-            label1.Location = new Point(12, 52);
+            label1.Location = new Point(14, 69);
             label1.Name = "label1";
-            label1.Size = new Size(176, 25);
+            label1.Size = new Size(225, 32);
             label1.TabIndex = 0;
             label1.Text = "Mantenimiento N°";
             // 
@@ -113,9 +113,9 @@
             // 
             lblCodigo.AutoSize = true;
             lblCodigo.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCodigo.Location = new Point(184, 52);
+            lblCodigo.Location = new Point(238, 69);
             lblCodigo.Name = "lblCodigo";
-            lblCodigo.Size = new Size(42, 25);
+            lblCodigo.Size = new Size(53, 32);
             lblCodigo.TabIndex = 1;
             lblCodigo.Text = "000";
             // 
@@ -124,9 +124,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.Desktop;
-            label2.Location = new Point(12, 77);
+            label2.Location = new Point(14, 103);
             label2.Name = "label2";
-            label2.Size = new Size(67, 25);
+            label2.Size = new Size(85, 32);
             label2.TabIndex = 2;
             label2.Text = "Fecha:";
             // 
@@ -134,9 +134,9 @@
             // 
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFecha.Location = new Point(85, 77);
+            lblFecha.Location = new Point(97, 103);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(186, 25);
+            lblFecha.Size = new Size(237, 32);
             lblFecha.TabIndex = 3;
             lblFecha.Text = "Lunes, 31 de Febrero";
             // 
@@ -145,9 +145,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.Desktop;
-            label3.Location = new Point(459, 9);
+            label3.Location = new Point(525, 12);
             label3.Name = "label3";
-            label3.Size = new Size(356, 37);
+            label3.Size = new Size(442, 46);
             label3.TabIndex = 4;
             label3.Text = "Factura de Mantenimiento";
             // 
@@ -163,9 +163,11 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox1.ForeColor = SystemColors.Desktop;
-            groupBox1.Location = new Point(12, 119);
+            groupBox1.Location = new Point(14, 159);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(400, 179);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(457, 239);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos del Cliente";
@@ -175,9 +177,9 @@
             lblDireccion.AutoSize = true;
             lblDireccion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblDireccion.ForeColor = SystemColors.ActiveCaptionText;
-            lblDireccion.Location = new Point(96, 136);
+            lblDireccion.Location = new Point(110, 181);
             lblDireccion.Name = "lblDireccion";
-            lblDireccion.Size = new Size(50, 18);
+            lblDireccion.Size = new Size(63, 24);
             lblDireccion.TabIndex = 13;
             lblDireccion.Text = "Pepito";
             // 
@@ -186,9 +188,9 @@
             lblTelefonoCliente.AutoSize = true;
             lblTelefonoCliente.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTelefonoCliente.ForeColor = SystemColors.ActiveCaptionText;
-            lblTelefonoCliente.Location = new Point(90, 101);
+            lblTelefonoCliente.Location = new Point(103, 135);
             lblTelefonoCliente.Name = "lblTelefonoCliente";
-            lblTelefonoCliente.Size = new Size(50, 18);
+            lblTelefonoCliente.Size = new Size(63, 24);
             lblTelefonoCliente.TabIndex = 12;
             lblTelefonoCliente.Text = "Pepito";
             // 
@@ -197,9 +199,9 @@
             lblCedulaCliente.AutoSize = true;
             lblCedulaCliente.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCedulaCliente.ForeColor = SystemColors.ActiveCaptionText;
-            lblCedulaCliente.Location = new Point(51, 66);
+            lblCedulaCliente.Location = new Point(58, 88);
             lblCedulaCliente.Name = "lblCedulaCliente";
-            lblCedulaCliente.Size = new Size(50, 18);
+            lblCedulaCliente.Size = new Size(63, 24);
             lblCedulaCliente.TabIndex = 11;
             lblCedulaCliente.Text = "Pepito";
             // 
@@ -208,9 +210,9 @@
             lblNombreCliente.AutoSize = true;
             lblNombreCliente.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblNombreCliente.ForeColor = SystemColors.ActiveCaptionText;
-            lblNombreCliente.Location = new Point(96, 34);
+            lblNombreCliente.Location = new Point(110, 45);
             lblNombreCliente.Name = "lblNombreCliente";
-            lblNombreCliente.Size = new Size(50, 18);
+            lblNombreCliente.Size = new Size(63, 24);
             lblNombreCliente.TabIndex = 10;
             lblNombreCliente.Text = "Pepito";
             // 
@@ -219,9 +221,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = SystemColors.ActiveCaptionText;
-            label7.Location = new Point(6, 136);
+            label7.Location = new Point(7, 181);
             label7.Name = "label7";
-            label7.Size = new Size(90, 18);
+            label7.Size = new Size(111, 24);
             label7.TabIndex = 9;
             label7.Text = "Dirección: ";
             // 
@@ -230,9 +232,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ActiveCaptionText;
-            label6.Location = new Point(6, 101);
+            label6.Location = new Point(7, 135);
             label6.Name = "label6";
-            label6.Size = new Size(84, 18);
+            label6.Size = new Size(105, 24);
             label6.TabIndex = 8;
             label6.Text = "Telefono: ";
             // 
@@ -241,9 +243,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(6, 66);
+            label5.Location = new Point(7, 88);
             label5.Name = "label5";
-            label5.Size = new Size(39, 18);
+            label5.Size = new Size(47, 24);
             label5.TabIndex = 7;
             label5.Text = "C.I.:";
             // 
@@ -252,9 +254,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(6, 34);
+            label4.Location = new Point(7, 45);
             label4.Name = "label4";
-            label4.Size = new Size(87, 18);
+            label4.Size = new Size(107, 24);
             label4.TabIndex = 6;
             label4.Text = "Nombres: ";
             // 
@@ -270,9 +272,11 @@
             groupBox2.Controls.Add(label11);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox2.ForeColor = SystemColors.Desktop;
-            groupBox2.Location = new Point(441, 119);
+            groupBox2.Location = new Point(504, 159);
+            groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(386, 179);
+            groupBox2.Padding = new Padding(3, 4, 3, 4);
+            groupBox2.Size = new Size(441, 239);
             groupBox2.TabIndex = 10;
             groupBox2.TabStop = false;
             groupBox2.Text = "Datos del Mecánico";
@@ -282,9 +286,9 @@
             lblJornada.AutoSize = true;
             lblJornada.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblJornada.ForeColor = SystemColors.ActiveCaptionText;
-            lblJornada.Location = new Point(91, 136);
+            lblJornada.Location = new Point(104, 181);
             lblJornada.Name = "lblJornada";
-            lblJornada.Size = new Size(50, 18);
+            lblJornada.Size = new Size(63, 24);
             lblJornada.TabIndex = 17;
             lblJornada.Text = "Pepito";
             // 
@@ -293,9 +297,9 @@
             lblEspecialidad.AutoSize = true;
             lblEspecialidad.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblEspecialidad.ForeColor = SystemColors.ActiveCaptionText;
-            lblEspecialidad.Location = new Point(125, 101);
+            lblEspecialidad.Location = new Point(143, 135);
             lblEspecialidad.Name = "lblEspecialidad";
-            lblEspecialidad.Size = new Size(50, 18);
+            lblEspecialidad.Size = new Size(63, 24);
             lblEspecialidad.TabIndex = 16;
             lblEspecialidad.Text = "Pepito";
             // 
@@ -304,9 +308,9 @@
             lblCedulaMecanico.AutoSize = true;
             lblCedulaMecanico.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCedulaMecanico.ForeColor = SystemColors.ActiveCaptionText;
-            lblCedulaMecanico.Location = new Point(51, 66);
+            lblCedulaMecanico.Location = new Point(58, 88);
             lblCedulaMecanico.Name = "lblCedulaMecanico";
-            lblCedulaMecanico.Size = new Size(50, 18);
+            lblCedulaMecanico.Size = new Size(63, 24);
             lblCedulaMecanico.TabIndex = 15;
             lblCedulaMecanico.Text = "Pepito";
             // 
@@ -315,9 +319,9 @@
             lblNombreMecanico.AutoSize = true;
             lblNombreMecanico.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblNombreMecanico.ForeColor = SystemColors.ActiveCaptionText;
-            lblNombreMecanico.Location = new Point(89, 34);
+            lblNombreMecanico.Location = new Point(102, 45);
             lblNombreMecanico.Name = "lblNombreMecanico";
-            lblNombreMecanico.Size = new Size(50, 18);
+            lblNombreMecanico.Size = new Size(63, 24);
             lblNombreMecanico.TabIndex = 14;
             lblNombreMecanico.Text = "Pepito";
             // 
@@ -326,9 +330,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.ActiveCaptionText;
-            label8.Location = new Point(6, 136);
+            label8.Location = new Point(7, 181);
             label8.Name = "label8";
-            label8.Size = new Size(79, 18);
+            label8.Size = new Size(97, 24);
             label8.TabIndex = 9;
             label8.Text = "Jornada: ";
             // 
@@ -337,9 +341,9 @@
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = SystemColors.ActiveCaptionText;
-            label9.Location = new Point(6, 101);
+            label9.Location = new Point(7, 135);
             label9.Name = "label9";
-            label9.Size = new Size(113, 18);
+            label9.Size = new Size(142, 24);
             label9.TabIndex = 8;
             label9.Text = "Especialidad: ";
             // 
@@ -348,9 +352,9 @@
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = SystemColors.ActiveCaptionText;
-            label10.Location = new Point(6, 66);
+            label10.Location = new Point(7, 88);
             label10.Name = "label10";
-            label10.Size = new Size(39, 18);
+            label10.Size = new Size(47, 24);
             label10.TabIndex = 7;
             label10.Text = "C.I.:";
             // 
@@ -359,9 +363,9 @@
             label11.AutoSize = true;
             label11.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = SystemColors.ActiveCaptionText;
-            label11.Location = new Point(6, 34);
+            label11.Location = new Point(7, 45);
             label11.Name = "label11";
-            label11.Size = new Size(87, 18);
+            label11.Size = new Size(107, 24);
             label11.TabIndex = 6;
             label11.Text = "Nombres: ";
             // 
@@ -377,9 +381,11 @@
             groupBox3.Controls.Add(label15);
             groupBox3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox3.ForeColor = SystemColors.Desktop;
-            groupBox3.Location = new Point(863, 119);
+            groupBox3.Location = new Point(986, 159);
+            groupBox3.Margin = new Padding(3, 4, 3, 4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(386, 179);
+            groupBox3.Padding = new Padding(3, 4, 3, 4);
+            groupBox3.Size = new Size(441, 239);
             groupBox3.TabIndex = 11;
             groupBox3.TabStop = false;
             groupBox3.Text = "Datos del Vehículo";
@@ -389,9 +395,9 @@
             lblAnio.AutoSize = true;
             lblAnio.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblAnio.ForeColor = SystemColors.ActiveCaptionText;
-            lblAnio.Location = new Point(59, 101);
+            lblAnio.Location = new Point(67, 135);
             lblAnio.Name = "lblAnio";
-            lblAnio.Size = new Size(50, 18);
+            lblAnio.Size = new Size(63, 24);
             lblAnio.TabIndex = 13;
             lblAnio.Text = "Pepito";
             // 
@@ -400,9 +406,9 @@
             lblTipo.AutoSize = true;
             lblTipo.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTipo.ForeColor = SystemColors.ActiveCaptionText;
-            lblTipo.Location = new Point(63, 66);
+            lblTipo.Location = new Point(72, 88);
             lblTipo.Name = "lblTipo";
-            lblTipo.Size = new Size(50, 18);
+            lblTipo.Size = new Size(63, 24);
             lblTipo.TabIndex = 12;
             lblTipo.Text = "Pepito";
             // 
@@ -411,9 +417,9 @@
             lblPlaca.AutoSize = true;
             lblPlaca.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblPlaca.ForeColor = SystemColors.ActiveCaptionText;
-            lblPlaca.Location = new Point(67, 136);
+            lblPlaca.Location = new Point(77, 181);
             lblPlaca.Name = "lblPlaca";
-            lblPlaca.Size = new Size(50, 18);
+            lblPlaca.Size = new Size(63, 24);
             lblPlaca.TabIndex = 12;
             lblPlaca.Text = "Pepito";
             // 
@@ -422,9 +428,9 @@
             lblMarca.AutoSize = true;
             lblMarca.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblMarca.ForeColor = SystemColors.ActiveCaptionText;
-            lblMarca.Location = new Point(72, 34);
+            lblMarca.Location = new Point(82, 45);
             lblMarca.Name = "lblMarca";
-            lblMarca.Size = new Size(50, 18);
+            lblMarca.Size = new Size(63, 24);
             lblMarca.TabIndex = 11;
             lblMarca.Text = "Pepito";
             // 
@@ -433,9 +439,9 @@
             label12.AutoSize = true;
             label12.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = SystemColors.ActiveCaptionText;
-            label12.Location = new Point(6, 136);
+            label12.Location = new Point(7, 181);
             label12.Name = "label12";
-            label12.Size = new Size(55, 18);
+            label12.Size = new Size(67, 24);
             label12.TabIndex = 9;
             label12.Text = "Placa:";
             // 
@@ -444,9 +450,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label13.ForeColor = SystemColors.ActiveCaptionText;
-            label13.Location = new Point(6, 101);
+            label13.Location = new Point(7, 135);
             label13.Name = "label13";
-            label13.Size = new Size(47, 18);
+            label13.Size = new Size(60, 24);
             label13.TabIndex = 8;
             label13.Text = "Año: ";
             // 
@@ -455,9 +461,9 @@
             label14.AutoSize = true;
             label14.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label14.ForeColor = SystemColors.ActiveCaptionText;
-            label14.Location = new Point(6, 66);
+            label14.Location = new Point(7, 88);
             label14.Name = "label14";
-            label14.Size = new Size(51, 18);
+            label14.Size = new Size(64, 24);
             label14.TabIndex = 7;
             label14.Text = "Tipo: ";
             // 
@@ -466,9 +472,9 @@
             label15.AutoSize = true;
             label15.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label15.ForeColor = SystemColors.ActiveCaptionText;
-            label15.Location = new Point(6, 34);
+            label15.Location = new Point(7, 45);
             label15.Name = "label15";
-            label15.Size = new Size(60, 18);
+            label15.Size = new Size(73, 24);
             label15.TabIndex = 6;
             label15.Text = "Marca:";
             // 
@@ -482,9 +488,11 @@
             groupBox4.Controls.Add(label19);
             groupBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox4.ForeColor = SystemColors.Desktop;
-            groupBox4.Location = new Point(12, 304);
+            groupBox4.Location = new Point(14, 405);
+            groupBox4.Margin = new Padding(3, 4, 3, 4);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1237, 139);
+            groupBox4.Padding = new Padding(3, 4, 3, 4);
+            groupBox4.Size = new Size(1414, 185);
             groupBox4.TabIndex = 10;
             groupBox4.TabStop = false;
             groupBox4.Text = "Detalles del Manteniemiento";
@@ -494,9 +502,9 @@
             lblTipoMantenimiento.AutoSize = true;
             lblTipoMantenimiento.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTipoMantenimiento.ForeColor = SystemColors.ActiveCaptionText;
-            lblTipoMantenimiento.Location = new Point(196, 101);
+            lblTipoMantenimiento.Location = new Point(224, 135);
             lblTipoMantenimiento.Name = "lblTipoMantenimiento";
-            lblTipoMantenimiento.Size = new Size(50, 18);
+            lblTipoMantenimiento.Size = new Size(63, 24);
             lblTipoMantenimiento.TabIndex = 16;
             lblTipoMantenimiento.Text = "Pepito";
             // 
@@ -505,9 +513,9 @@
             lblTrabajo.AutoSize = true;
             lblTrabajo.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTrabajo.ForeColor = SystemColors.ActiveCaptionText;
-            lblTrabajo.Location = new Point(180, 66);
+            lblTrabajo.Location = new Point(206, 88);
             lblTrabajo.Name = "lblTrabajo";
-            lblTrabajo.Size = new Size(50, 18);
+            lblTrabajo.Size = new Size(63, 24);
             lblTrabajo.TabIndex = 15;
             lblTrabajo.Text = "Pepito";
             // 
@@ -516,9 +524,9 @@
             lblDiagnostico.AutoSize = true;
             lblDiagnostico.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblDiagnostico.ForeColor = SystemColors.ActiveCaptionText;
-            lblDiagnostico.Location = new Point(110, 34);
+            lblDiagnostico.Location = new Point(126, 45);
             lblDiagnostico.Name = "lblDiagnostico";
-            lblDiagnostico.Size = new Size(50, 18);
+            lblDiagnostico.Size = new Size(63, 24);
             lblDiagnostico.TabIndex = 14;
             lblDiagnostico.Text = "Pepito";
             // 
@@ -527,9 +535,9 @@
             label17.AutoSize = true;
             label17.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label17.ForeColor = SystemColors.ActiveCaptionText;
-            label17.Location = new Point(6, 101);
+            label17.Location = new Point(7, 135);
             label17.Name = "label17";
-            label17.Size = new Size(184, 18);
+            label17.Size = new Size(231, 24);
             label17.TabIndex = 8;
             label17.Text = "Tipo de Mantenimiento:";
             // 
@@ -538,9 +546,9 @@
             label18.AutoSize = true;
             label18.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label18.ForeColor = SystemColors.ActiveCaptionText;
-            label18.Location = new Point(6, 66);
+            label18.Location = new Point(7, 88);
             label18.Name = "label18";
-            label18.Size = new Size(168, 18);
+            label18.Size = new Size(205, 24);
             label18.TabIndex = 7;
             label18.Text = "Trabajos Realizados:";
             // 
@@ -549,9 +557,9 @@
             label19.AutoSize = true;
             label19.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label19.ForeColor = SystemColors.ActiveCaptionText;
-            label19.Location = new Point(6, 34);
+            label19.Location = new Point(7, 45);
             label19.Name = "label19";
-            label19.Size = new Size(98, 18);
+            label19.Size = new Size(119, 24);
             label19.TabIndex = 6;
             label19.Text = "Diagnóstico";
             // 
@@ -561,9 +569,11 @@
             groupBox5.Controls.Add(lblRepuesto);
             groupBox5.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox5.ForeColor = SystemColors.Desktop;
-            groupBox5.Location = new Point(18, 449);
+            groupBox5.Location = new Point(21, 599);
+            groupBox5.Margin = new Padding(3, 4, 3, 4);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(607, 162);
+            groupBox5.Padding = new Padding(3, 4, 3, 4);
+            groupBox5.Size = new Size(694, 216);
             groupBox5.TabIndex = 11;
             groupBox5.TabStop = false;
             groupBox5.Text = "Repuestos Utilizados";
@@ -571,9 +581,10 @@
             // listaRepuesto
             // 
             listaRepuesto.Columns.AddRange(new ColumnHeader[] { Nombre, Precio });
-            listaRepuesto.Location = new Point(11, 28);
+            listaRepuesto.Location = new Point(13, 37);
+            listaRepuesto.Margin = new Padding(3, 4, 3, 4);
             listaRepuesto.Name = "listaRepuesto";
-            listaRepuesto.Size = new Size(574, 124);
+            listaRepuesto.Size = new Size(655, 164);
             listaRepuesto.TabIndex = 18;
             listaRepuesto.UseCompatibleStateImageBehavior = false;
             listaRepuesto.View = System.Windows.Forms.View.Details;
@@ -593,9 +604,9 @@
             lblRepuesto.AutoSize = true;
             lblRepuesto.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblRepuesto.ForeColor = SystemColors.ActiveCaptionText;
-            lblRepuesto.Location = new Point(11, 65);
+            lblRepuesto.Location = new Point(13, 87);
             lblRepuesto.Name = "lblRepuesto";
-            lblRepuesto.Size = new Size(0, 18);
+            lblRepuesto.Size = new Size(0, 24);
             lblRepuesto.TabIndex = 17;
             // 
             // groupBox6
@@ -603,9 +614,11 @@
             groupBox6.Controls.Add(listaServicio);
             groupBox6.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox6.ForeColor = SystemColors.Desktop;
-            groupBox6.Location = new Point(18, 617);
+            groupBox6.Location = new Point(21, 823);
+            groupBox6.Margin = new Padding(3, 4, 3, 4);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(607, 168);
+            groupBox6.Padding = new Padding(3, 4, 3, 4);
+            groupBox6.Size = new Size(694, 224);
             groupBox6.TabIndex = 12;
             groupBox6.TabStop = false;
             groupBox6.Text = "Servicios Adicionales";
@@ -613,9 +626,10 @@
             // listaServicio
             // 
             listaServicio.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
-            listaServicio.Location = new Point(11, 28);
+            listaServicio.Location = new Point(13, 37);
+            listaServicio.Margin = new Padding(3, 4, 3, 4);
             listaServicio.Name = "listaServicio";
-            listaServicio.Size = new Size(574, 124);
+            listaServicio.Size = new Size(655, 164);
             listaServicio.TabIndex = 19;
             listaServicio.UseCompatibleStateImageBehavior = false;
             listaServicio.View = System.Windows.Forms.View.Details;
@@ -646,9 +660,11 @@
             groupBox7.Controls.Add(label24);
             groupBox7.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             groupBox7.ForeColor = SystemColors.Desktop;
-            groupBox7.Location = new Point(642, 449);
+            groupBox7.Location = new Point(734, 599);
+            groupBox7.Margin = new Padding(3, 4, 3, 4);
             groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(607, 336);
+            groupBox7.Padding = new Padding(3, 4, 3, 4);
+            groupBox7.Size = new Size(694, 448);
             groupBox7.TabIndex = 12;
             groupBox7.TabStop = false;
             groupBox7.Text = "Desglose";
@@ -658,9 +674,9 @@
             lblSubtotal.AutoSize = true;
             lblSubtotal.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblSubtotal.ForeColor = SystemColors.ActiveCaptionText;
-            lblSubtotal.Location = new Point(102, 144);
+            lblSubtotal.Location = new Point(117, 192);
             lblSubtotal.Name = "lblSubtotal";
-            lblSubtotal.Size = new Size(16, 18);
+            lblSubtotal.Size = new Size(20, 24);
             lblSubtotal.TabIndex = 25;
             lblSubtotal.Text = "0";
             // 
@@ -669,9 +685,9 @@
             label21.AutoSize = true;
             label21.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label21.ForeColor = SystemColors.ActiveCaptionText;
-            label21.Location = new Point(7, 144);
+            label21.Location = new Point(8, 192);
             label21.Name = "label21";
-            label21.Size = new Size(89, 18);
+            label21.Size = new Size(108, 24);
             label21.TabIndex = 24;
             label21.Text = "Subtotal: $";
             // 
@@ -680,9 +696,9 @@
             lblCostoMantenimiento.AutoSize = true;
             lblCostoMantenimiento.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCostoMantenimiento.ForeColor = SystemColors.ActiveCaptionText;
-            lblCostoMantenimiento.Location = new Point(200, 106);
+            lblCostoMantenimiento.Location = new Point(229, 141);
             lblCostoMantenimiento.Name = "lblCostoMantenimiento";
-            lblCostoMantenimiento.Size = new Size(16, 18);
+            lblCostoMantenimiento.Size = new Size(20, 24);
             lblCostoMantenimiento.TabIndex = 23;
             lblCostoMantenimiento.Text = "0";
             // 
@@ -691,9 +707,9 @@
             label16.AutoSize = true;
             label16.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label16.ForeColor = SystemColors.ActiveCaptionText;
-            label16.Location = new Point(6, 106);
+            label16.Location = new Point(7, 141);
             label16.Name = "label16";
-            label16.Size = new Size(188, 18);
+            label16.Size = new Size(229, 24);
             label16.TabIndex = 22;
             label16.Text = "Costo Mantenimiento: $";
             // 
@@ -702,9 +718,9 @@
             lblTotal.AutoSize = true;
             lblTotal.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotal.ForeColor = SystemColors.ActiveCaptionText;
-            lblTotal.Location = new Point(200, 297);
+            lblTotal.Location = new Point(229, 396);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(79, 25);
+            lblTotal.Size = new Size(97, 31);
             lblTotal.TabIndex = 21;
             lblTotal.Text = "Pepito";
             // 
@@ -713,9 +729,9 @@
             lblIva.AutoSize = true;
             lblIva.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblIva.ForeColor = SystemColors.ActiveCaptionText;
-            lblIva.Location = new Point(112, 181);
+            lblIva.Location = new Point(128, 241);
             lblIva.Name = "lblIva";
-            lblIva.Size = new Size(16, 18);
+            lblIva.Size = new Size(20, 24);
             lblIva.TabIndex = 20;
             lblIva.Text = "0";
             // 
@@ -724,9 +740,9 @@
             lblCostoServicio.AutoSize = true;
             lblCostoServicio.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCostoServicio.ForeColor = SystemColors.ActiveCaptionText;
-            lblCostoServicio.Location = new Point(183, 71);
+            lblCostoServicio.Location = new Point(209, 95);
             lblCostoServicio.Name = "lblCostoServicio";
-            lblCostoServicio.Size = new Size(16, 18);
+            lblCostoServicio.Size = new Size(20, 24);
             lblCostoServicio.TabIndex = 19;
             lblCostoServicio.Text = "0";
             // 
@@ -735,9 +751,9 @@
             lblCostoRepuesto.AutoSize = true;
             lblCostoRepuesto.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblCostoRepuesto.ForeColor = SystemColors.ActiveCaptionText;
-            lblCostoRepuesto.Location = new Point(194, 34);
+            lblCostoRepuesto.Location = new Point(222, 45);
             lblCostoRepuesto.Name = "lblCostoRepuesto";
-            lblCostoRepuesto.Size = new Size(16, 18);
+            lblCostoRepuesto.Size = new Size(20, 24);
             lblCostoRepuesto.TabIndex = 18;
             lblCostoRepuesto.Text = "0";
             // 
@@ -746,9 +762,9 @@
             label26.AutoSize = true;
             label26.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label26.ForeColor = Color.Red;
-            label26.Location = new Point(13, 297);
+            label26.Location = new Point(15, 396);
             label26.Name = "label26";
-            label26.Size = new Size(181, 25);
+            label26.Size = new Size(222, 31);
             label26.TabIndex = 9;
             label26.Text = "Total a Pagar: $";
             // 
@@ -757,9 +773,9 @@
             label25.AutoSize = true;
             label25.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label25.ForeColor = SystemColors.ActiveCaptionText;
-            label25.Location = new Point(7, 181);
+            label25.Location = new Point(8, 241);
             label25.Name = "label25";
-            label25.Size = new Size(100, 18);
+            label25.Size = new Size(124, 24);
             label25.TabIndex = 8;
             label25.Text = "IVA (12%): $";
             // 
@@ -768,9 +784,9 @@
             label23.AutoSize = true;
             label23.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label23.ForeColor = SystemColors.ActiveCaptionText;
-            label23.Location = new Point(6, 71);
+            label23.Location = new Point(7, 95);
             label23.Name = "label23";
-            label23.Size = new Size(171, 18);
+            label23.Size = new Size(207, 24);
             label23.TabIndex = 7;
             label23.Text = "Costo de Servicios: $";
             // 
@@ -779,17 +795,17 @@
             label24.AutoSize = true;
             label24.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label24.ForeColor = SystemColors.ActiveCaptionText;
-            label24.Location = new Point(6, 34);
+            label24.Location = new Point(7, 45);
             label24.Name = "label24";
-            label24.Size = new Size(182, 18);
+            label24.Size = new Size(221, 24);
             label24.TabIndex = 6;
             label24.Text = "Costo de Repuestos: $";
             // 
             // frmInforme
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1277, 787);
+            ClientSize = new Size(1459, 1049);
             Controls.Add(groupBox7);
             Controls.Add(groupBox6);
             Controls.Add(groupBox5);
@@ -802,6 +818,7 @@
             Controls.Add(label2);
             Controls.Add(lblCodigo);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmInforme";
             Text = "Factura N°";
             Load += frmInforme_Load;
