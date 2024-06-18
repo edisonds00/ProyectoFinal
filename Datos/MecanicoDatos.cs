@@ -40,6 +40,11 @@ namespace Proyecto_Primer_Parcial.Datos
             return mecanicos.FirstOrDefault(m => m.Cedula == cedula);
         }
 
+        public Mecanico ObtenerPorNombre(string nombreCompleto)
+        {
+            return mecanicos.Find(m => (m.Nombres + " " + m.Apellidos) == nombreCompleto);
+        }
+
         // Actualizar mecánico
         public void Actualizar(Mecanico mecanico)
         {

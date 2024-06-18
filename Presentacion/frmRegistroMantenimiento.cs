@@ -57,36 +57,127 @@ namespace GestorMantenimientosTaller.View
 
         }
 
-        private void CargarServicios()
+        private Repuesto ObtenerRepuestoPorNombre(string nombreRepuesto)
         {
-            
-        }
-
-        private void CargarRespuestos()
-        {
-        }
-
-        private void CargarClientes()
-        {
-            
-        }
-
-        private void CargarMecanicos()
-        {
-            
+            RepuestoDatos repuestoDatos = new RepuestoDatos();
+            return repuestoDatos.ObtenerPorNombre(nombreRepuesto);  // Implementa este método en tu clase RepuestoDatos
         }
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                MantenimientoDatos mantenimientoDatos = new MantenimientoDatos();
+
+                ClienteDatos clienteDatos = new ClienteDatos();
+                MecanicoDatos mecanicoDatos = new MecanicoDatos();
+
+                Cliente cliente = clienteDatos.ObtenerPorNombre(cbClientes.SelectedItem.ToString());
+                Mecanico mecanico = mecanicoDatos.ObtenerPorNombre(cbMecanicos.SelectedItem.ToString());
+
+                // Convertir el año de fabricación a string
+                string añoFabricacion = txtAño.Text;
+
+                // Crear el objeto Vehiculo con el valor string para año de fabricación
+                Vehiculo vehiculo = new Vehiculo(txtPlaca.Text, txtMarca.Text, añoFabricacion, txtTipo.Text);
+
+                List<Repuesto> repuestos = new List<Repuesto>();
+                foreach (var item in clbRepuestos.CheckedItems)
+                {
+                    string nombreRepuesto = item.ToString();  // Obtener el nombre del repuesto como string
+                    Repuesto repuesto = ObtenerRepuestoPorNombre(nombreRepuesto);  // Buscar el objeto Repuesto por nombre
+                    if (repuesto != null)
+                    {
+                        repuestos.Add(repuesto);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"El repuesto '{nombreRepuesto}' no fue encontrado en la base de datos.");
+                    }
+                }
+
+                List<Servicio> servicios = new List<Servicio>();
+                foreach (var item in clbServicios.CheckedItems)
+                {
+                    servicios.Add((Servicio)item);
+                }
+
+                bool esCorrectivo = rdbCorrectivo.Checked;
+
+                Mantenimiento mantenimiento = new Mantenimiento(
+                    txtId.Text,
+                    cliente,
+                    mecanico,
+                    dtpFecha.Value,
+                    vehiculo,
+                    txtDiagnostico.Text,
+                    rtbTrabajo.Text,
+                    esCorrectivo,
+                    repuestos.ToArray(),
+                    servicios.ToArray()
+                );
+
+                mantenimientoDatos.Agregar(mantenimiento);
+
+                MessageBox.Show("Mantenimiento guardado exitosamente.");
+                ReiniciarFormulario();
+                ResetearBotones();
+                DeshabilitarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar el mantenimiento: " + ex.Message);
+            }
         }
 
-        
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                MantenimientoDatos mantenimientoDatos = new MantenimientoDatos();
+                mantenimientoEncontrado = mantenimientoDatos.ObtenerPorCodigo(txtId.Text);
+
+                if (mantenimientoEncontrado != null)
+                {
+                    dtpFecha.Value = mantenimientoEncontrado.FechaMant;
+                    cbClientes.SelectedItem = mantenimientoEncontrado.Cliente.Nombres + " " + mantenimientoEncontrado.Cliente.Apellidos;
+                    cbMecanicos.SelectedItem = mantenimientoEncontrado.Mecanico.Nombres + " " + mantenimientoEncontrado.Mecanico.Apellidos;
+                    txtPlaca.Text = mantenimientoEncontrado.Vehiculo.Placa;
+                    txtMarca.Text = mantenimientoEncontrado.Vehiculo.Marca;
+                    txtAño.Text = mantenimientoEncontrado.Vehiculo.AnoFabricacion.ToString();
+                    txtTipo.Text = mantenimientoEncontrado.Vehiculo.Tipo;
+                    txtDiagnostico.Text = mantenimientoEncontrado.Diagnostico;
+                    rtbTrabajo.Text = mantenimientoEncontrado.Trabajo;
+                    rdbCorrectivo.Checked = mantenimientoEncontrado.EsCorrectivo;
+                    rdbPreventivo.Checked = !mantenimientoEncontrado.EsCorrectivo;
+
+                    for (int i = 0; i < clbRepuestos.Items.Count; i++)
+                    {
+                        clbRepuestos.SetItemChecked(i, mantenimientoEncontrado.Repuestos.Contains((Repuesto)clbRepuestos.Items[i]));
+                    }
+
+                    for (int i = 0; i < clbServicios.Items.Count; i++)
+                    {
+                        clbServicios.SetItemChecked(i, mantenimientoEncontrado.Servicios.Contains((Servicio)clbServicios.Items[i]));
+                    }
+
+                    HabilitarCampos();
+                    btnEliminar.Enabled = true;
+                    btnMostrar.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Mantenimiento no encontrado.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar el mantenimiento: " + ex.Message);
+            }
         }
+
 
         private void cargarClientesEnComboBox()
         {
@@ -123,8 +214,22 @@ namespace GestorMantenimientosTaller.View
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                MantenimientoDatos mantenimientoDatos = new MantenimientoDatos();
+                mantenimientoDatos.Eliminar(txtId.Text);
+
+                MessageBox.Show("Mantenimiento eliminado exitosamente.");
+                ReiniciarFormulario();
+                ResetearBotones();
+                DeshabilitarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar el mantenimiento: " + ex.Message);
+            }
         }
+
 
         private void ReiniciarFormulario()
         {
@@ -206,9 +311,7 @@ namespace GestorMantenimientosTaller.View
             ReiniciarFormulario();
             HabilitarCampos();
 
-            // Cargar clientes y mecánicos en ComboBox
-            CargarClientes();
-            CargarMecanicos();
+       
 
             // Generar nuevo ID
             txtId.Text = GenerarNuevoId().ToString();

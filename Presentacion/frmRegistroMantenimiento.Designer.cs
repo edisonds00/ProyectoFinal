@@ -253,11 +253,11 @@
             // groupBox3
             // 
             groupBox3.Controls.Add(clbServicios);
-            groupBox3.Location = new Point(599, 291);
+            groupBox3.Location = new Point(421, 291);
             groupBox3.Margin = new Padding(3, 4, 3, 4);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(3, 4, 3, 4);
-            groupBox3.Size = new Size(163, 248);
+            groupBox3.Size = new Size(341, 248);
             groupBox3.TabIndex = 16;
             groupBox3.TabStop = false;
             groupBox3.Text = "Servicios adicionales:";
@@ -268,10 +268,10 @@
             clbServicios.Enabled = false;
             clbServicios.FormattingEnabled = true;
             clbServicios.Items.AddRange(new object[] { "Lavado exterior e interior del vehículo", "Cambio de aceite", "Alineación y balanceo", "Cambio de filtros (aire, aceite, combustible)", "Revisión y carga de refrigerante", "Revisión y ajuste de frenos", "Revisión y ajuste de suspensión", "Limpieza y ajuste de bujías", "Revisión de sistemas eléctricos (luces, batería, alternador)", "Prueba y ajuste de presión de llantas" });
-            clbServicios.Location = new Point(11, 36);
+            clbServicios.Location = new Point(11, 21);
             clbServicios.Margin = new Padding(3, 4, 3, 4);
             clbServicios.Name = "clbServicios";
-            clbServicios.Size = new Size(140, 180);
+            clbServicios.Size = new Size(324, 224);
             clbServicios.TabIndex = 0;
             // 
             // rtbTrabajo
@@ -280,7 +280,7 @@
             rtbTrabajo.Margin = new Padding(3, 4, 3, 4);
             rtbTrabajo.Name = "rtbTrabajo";
             rtbTrabajo.ReadOnly = true;
-            rtbTrabajo.Size = new Size(457, 195);
+            rtbTrabajo.Size = new Size(295, 195);
             rtbTrabajo.TabIndex = 13;
             rtbTrabajo.Text = "";
             // 
@@ -299,7 +299,7 @@
             txtDiagnostico.Margin = new Padding(3, 4, 3, 4);
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.ReadOnly = true;
-            txtDiagnostico.Size = new Size(457, 27);
+            txtDiagnostico.Size = new Size(295, 27);
             txtDiagnostico.TabIndex = 11;
             // 
             // label9

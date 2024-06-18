@@ -40,6 +40,12 @@ namespace Proyecto_Primer_Parcial.Datos
             return clientes.FirstOrDefault(c => c.Cedula == cedula);
         }
 
+        public Cliente ObtenerPorNombre(string nombreCompleto)
+        {
+            return clientes.Find(c => (c.Nombres + " " + c.Apellidos) == nombreCompleto);
+        }
+
+
         // Actualizar cliente
         public void Actualizar(Cliente cliente)
         {

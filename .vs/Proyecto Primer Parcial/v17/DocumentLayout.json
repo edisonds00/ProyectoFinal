@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\datos\\clientedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:datos\\clientedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistromantenimiento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistromantenimiento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistromantenimiento.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistromantenimiento.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\mantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\mantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\datos\\mecanicodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:datos\\mecanicodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\datos\\vehiculodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:datos\\vehiculodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\mantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\mantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistromantenimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\mecanico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\mecanico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\datos\\mantenimientodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,24 +55,16 @@
       "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:datos\\serviciodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frmregistrovehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frmregistrovehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\mecanico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\mecanico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\repuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\repuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\datos\\clientedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:datos\\clientedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\presentacion\\frminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:presentacion\\frminforme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|c:\\users\\walterduchi\\codigo\\c#\\proyecto jostin santacruz\\proyecto primer parcial\\negocio\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D2B84C9-C081-415F-BD95-AFC5F6488EC7}|Proyecto Primer Parcial.csproj|solutionrelative:negocio\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,178 +74,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 314,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmRegistroMantenimiento.resx",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.resx",
-              "RelativeDocumentMoniker": "Presentacion\\frmRegistroMantenimiento.resx",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.resx",
-              "RelativeToolTip": "Presentacion\\frmRegistroMantenimiento.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-18T01:45:23.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmRegistroMantenimiento.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.Designer.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmRegistroMantenimiento.Designer.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.Designer.cs",
-              "RelativeToolTip": "Presentacion\\frmRegistroMantenimiento.Designer.cs",
-              "ViewState": "AQIAAOsBAAAAAAAAAADwvw8CAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:12:26.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmRegistroMantenimiento.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmRegistroMantenimiento.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\frmRegistroMantenimiento.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:47:26.665Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "frmRegistroMantenimiento.cs",
               "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmRegistroMantenimiento.cs",
               "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.cs",
               "RelativeToolTip": "Presentacion\\frmRegistroMantenimiento.cs",
-              "ViewState": "AQIAAPsAAAAAAAAAAAAkwBwBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:49:08.322Z",
+              "WhenOpened": "2024-06-18T02:05:17.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VehiculoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\VehiculoDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\VehiculoDatos.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\VehiculoDatos.cs",
-              "RelativeToolTip": "Datos\\VehiculoDatos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:21:59.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T01:38:10.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Mantenimiento.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mantenimiento.cs",
-              "RelativeDocumentMoniker": "Negocio\\Mantenimiento.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mantenimiento.cs",
-              "RelativeToolTip": "Negocio\\Mantenimiento.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA5wCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:12:52.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MantenimientoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\MantenimientoDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\MantenimientoDatos.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\MantenimientoDatos.cs",
-              "RelativeToolTip": "Datos\\MantenimientoDatos.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA4wDsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:53:37.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RepuestoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\RepuestoDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\RepuestoDatos.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\RepuestoDatos.cs",
-              "RelativeToolTip": "Datos\\RepuestoDatos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:22:01.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ServicioDatos.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\ServicioDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\ServicioDatos.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\ServicioDatos.cs",
-              "RelativeToolTip": "Datos\\ServicioDatos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:21:59.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Mecanico.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mecanico.cs",
-              "RelativeDocumentMoniker": "Negocio\\Mecanico.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mecanico.cs",
-              "RelativeToolTip": "Negocio\\Mecanico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:52:54.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmRegistroVehiculo.cs",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroVehiculo.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmRegistroVehiculo.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroVehiculo.cs",
-              "RelativeToolTip": "Presentacion\\frmRegistroVehiculo.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAA6wKYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:55:42.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "ClienteDatos.cs",
               "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\ClienteDatos.cs",
               "RelativeDocumentMoniker": "Datos\\ClienteDatos.cs",
               "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\ClienteDatos.cs",
               "RelativeToolTip": "Datos\\ClienteDatos.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAuwEgAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:53:00.863Z",
+              "WhenOpened": "2024-06-18T02:04:40.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
+              "Title": "frmRegistroMantenimiento.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.Designer.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmRegistroMantenimiento.Designer.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.Designer.cs",
+              "RelativeToolTip": "Presentacion\\frmRegistroMantenimiento.Designer.cs",
+              "ViewState": "AQIAANoBAAAAAAAAAAAkwOcBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:08:58.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mantenimiento.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mantenimiento.cs",
+              "RelativeDocumentMoniker": "Negocio\\Mantenimiento.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mantenimiento.cs",
+              "RelativeToolTip": "Negocio\\Mantenimiento.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:04:57.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Cliente.cs",
               "RelativeDocumentMoniker": "Negocio\\Cliente.cs",
@@ -249,20 +138,150 @@
               "RelativeToolTip": "Negocio\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:55:15.717Z",
+              "WhenOpened": "2024-06-18T02:04:54.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MecanicoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\MecanicoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\MecanicoDatos.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\MecanicoDatos.cs",
+              "RelativeToolTip": "Datos\\MecanicoDatos.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwC0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:04:44.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Mecanico.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mecanico.cs",
+              "RelativeDocumentMoniker": "Negocio\\Mecanico.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Mecanico.cs",
+              "RelativeToolTip": "Negocio\\Mecanico.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:05:00.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MantenimientoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\MantenimientoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\MantenimientoDatos.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\MantenimientoDatos.cs",
+              "RelativeToolTip": "Datos\\MantenimientoDatos.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAmwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:04:42.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "Negocio\\Vehiculo.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Vehiculo.cs",
+              "RelativeToolTip": "Negocio\\Vehiculo.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAuwAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:05:11.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehiculoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\VehiculoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\VehiculoDatos.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\VehiculoDatos.cs",
+              "RelativeToolTip": "Datos\\VehiculoDatos.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:04:51.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmRegistroMantenimiento.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmRegistroMantenimiento.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmRegistroMantenimiento.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\frmRegistroMantenimiento.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:05:12.82Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RepuestoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\RepuestoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\RepuestoDatos.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\RepuestoDatos.cs",
+              "RelativeToolTip": "Datos\\RepuestoDatos.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAiwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:04:46.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServicioDatos.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\ServicioDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\ServicioDatos.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Datos\\ServicioDatos.cs",
+              "RelativeToolTip": "Datos\\ServicioDatos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:04:48.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "frmInforme.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmInforme.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmInforme.cs",
-              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Presentacion\\frmInforme.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\frmInforme.cs [Dise\u00F1o]",
+              "Title": "Repuesto.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Repuesto.cs",
+              "RelativeDocumentMoniker": "Negocio\\Repuesto.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Repuesto.cs",
+              "RelativeToolTip": "Negocio\\Repuesto.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:48:05.382Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-18T02:05:07.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Servicio.cs",
+              "RelativeDocumentMoniker": "Negocio\\Servicio.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Servicio.cs",
+              "RelativeToolTip": "Negocio\\Servicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:05:09.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Persona.cs",
+              "RelativeDocumentMoniker": "Negocio\\Persona.cs",
+              "ToolTip": "C:\\Users\\WalterDuchi\\Codigo\\C#\\Proyecto Jostin Santacruz\\Proyecto Primer Parcial\\Negocio\\Persona.cs",
+              "RelativeToolTip": "Negocio\\Persona.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T02:05:04.306Z",
+              "EditorCaption": ""
             }
           ]
         }
